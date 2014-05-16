@@ -12,7 +12,8 @@ Directive to support the placeholder attribute on old browsers. No jQuery requir
 ```javascript
 angular.module('someModule', ['angular-placeholder-fallback'])
 ```
-* Styling
+
+# Styling
 
 ```css
  .placeholder{
