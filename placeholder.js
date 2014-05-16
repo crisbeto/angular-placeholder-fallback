@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-angular.module('angular-svg-round-progress', [])
+angular.module('angular-placeholder-fallback', [])
     .directive('placeholder', [function(){
         if('placeholder' in document.createElement('input')){
             // if browser supports placeholders, do nothing
