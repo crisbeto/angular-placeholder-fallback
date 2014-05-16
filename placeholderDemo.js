@@ -1,11 +1,14 @@
 ﻿'use strict';
 
+// NOTE: for demo purposes i've disabled the feature detection, 
+// you should remove the comment or download the proper version from https://github.com/crisbeto/angular-placeholder-fallback
+
 angular.module('angular-placeholder-fallback', [])
     .directive('placeholder', [function(){
-        if('placeholder' in document.createElement('input')){
-            // if browser supports placeholders, do nothing
-            return {};
-        };
+        // if('placeholder' in document.createElement('input')){
+        //     // if browser supports placeholders, do nothing
+        //     return {};
+        // };
 
         return {
             restrict:'A',

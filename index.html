@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular SVG round progressbar demo</title>
+    <style>
+        body{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+
+        .container{
+            width: 960px;
+            margin:100px auto;
+            text-align: center;
+        }
+
+        input, textarea{
+            width: 250px;
+            padding: 5px 10px;
+            text-align: left;
+            margin: 20px auto;
+            display: block;
+            resize:none;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        .placeholder{
+            color:#aaa;
+        }
+
+        /* just for demo purposes */
+        .supported::-webkit-input-placeholder {
+           color: transparent;
+        }
+
+        .supported:-moz-placeholder {
+           color: transparent;  
+        }
+
+        .supported::-moz-placeholder { 
+           color: transparent;  
+        }
+
+        .supported:-ms-input-placeholder {  
+           color: transparent;  
+        }
+    </style>
+</head>
+<body ng-app="demo">
+    <div class="container" ng-controller="demoCtrl">
+        <h1>Placeholder demo</h1>
+        <h2 ng-if="supported">It seems like your browser supports placeholders. <br> The demo has been tweaked so you can see how it would look like in a crappy browser</h2>
+        <input type="text" placeholder="Some random placeholder text" ng-class="{'supported': supported}"/>
+        <textarea placeholder="Some random other placeholder text" ng-class="{'supported': supported}"></textarea>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="placeholderDemo.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>
