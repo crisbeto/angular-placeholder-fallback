@@ -47,10 +47,17 @@
         .supported:-ms-input-placeholder {  
            color: transparent;  
         }
+
+        .back{
+            position: fixed;
+            top:5px;
+            right:5px;
+        }
     </style>
 </head>
 <body ng-app="demo">
     <div class="container" ng-controller="demoCtrl">
+        <a class="back" href="https://github.com/crisbeto/angular-placeholder-fallback">Back to project repo</a>
         <h1>Placeholder demo</h1>
         <h2 ng-if="supported">It seems like your browser supports placeholders. <br> The demo has been tweaked so you can see how it would look like in a crappy browser</h2>
         <input type="text" placeholder="Some random placeholder text" ng-class="{'supported': supported}"/>
