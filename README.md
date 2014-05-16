@@ -3,7 +3,7 @@ Angular placeholder fallback
 
 Directive to support the placeholder attribute on old browsers. No jQuery required.
 
-## [Demo](#)
+## [Demo](http://crisbeto.github.io/angular-placeholder-fallback/)
 ## Install
 
 * Include Angular and `placeholder.js` or `placeholder.min.js` in your page.
